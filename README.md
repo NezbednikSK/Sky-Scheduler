@@ -24,3 +24,5 @@ Default hash is for the string `nez`.
 6. Run `npm install`
 7. Run!\
 You can now pass your server address as an argument in [this URL](https://nezbedniksk.github.io/Sky-Scheduler-Player/?logo=data%3Aimage%2Fgif%3Bbase64%2CR0lGODlhAQABAIAAAP%2F%2F%2FwAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D&server=http://YOUR.SERVER:PORT/list?station=STATION_NAME).
+8. Access the web interface\
+It's on the port you specified!
