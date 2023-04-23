@@ -1,0 +1,15 @@
+{
+	"port": 1812,
+	"socket": "0.0.0.0",
+        "ssl": {
+		"enabled": false
+	},
+        "flag_db": "/home/nez/skyscheduler_refined/data",
+        "stations": [
+            {
+                "name": "oldies",
+                "file": "/home/nez/skyscheduler_refined/content.json",
+                "cors": "*"
+            }
+        ]
+}

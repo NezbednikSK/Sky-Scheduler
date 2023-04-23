@@ -1,0 +1,14 @@
+/* SPDX-License-Identifier: BSD-2-Clause */
+
+.i {
+    display: inline;
+}
+
+.console {
+    background-color: lightgray;
+}
+
+.m {
+    margin-top: 0;
+    margin-bottom: 0;
+}

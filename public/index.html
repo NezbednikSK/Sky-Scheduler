@@ -1,0 +1,57 @@
+<!-- SPDX-License-Identifier: BSD-2-Clause -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sky Scheduler</title>
+        <script src="api/js.cookie.min.js"></script>
+        <script src="api/sha256.min.js"></script>
+        <script src="api/videoUrlInspector.js"></script>
+        
+        <script> module = {}; </script>
+        <script src="api/is-mobile.js"></script>
+
+        <script src="interface.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <a href="licenses.html" style="display: none; position: absolute; top: 0; left: 0;" data-jslicense="1">licenses</a>
+        <noscript><span id="ljs">Please enable JavaScript to use this interface.</span></noscript>
+        <div id="login" style="display: none;">
+            <form method="POST" action="about:blank">
+                <label for="name">username:</label>
+                <input type="text" name="username" id="username">
+                <br>
+                <label for="password">password:</label>
+                <input type="password" name="password" id="password">
+                <br>
+                <input type="submit" value="login" onclick="event.preventDefault(); login()">
+            </form>
+        </div>
+        <div id="loading">Please wait... loading.</div>
+        <div id="interface" style="display: none;">
+            <h1 style="margin-bottom: 0;">Sky Scheduler - Refined Edition v%{VERSION}</h1>
+            <input type="checkbox" id="dragless" onclick="toggle_dragless()"><p class="i">&nbsp;Use dragless layout</p>
+            <br><br>
+            <p class="i">You have <p style="color: lightred;" id="amount" class="i">0</p> station<p id="indent" class="i">s</p> running.</p>
+        </div>
+        <div id="station" style="display: none;">
+            <a href=".">back</a>
+            <h1 id="station_name"></h1>
+            <p class="m">current song: <a id="current_song"></a></p>
+            <p class="m"><a id="time_left" style="color: green;">00:00</a> left</a>
+            <br>
+            <pre class="console" id="station_log">
+
+
+
+            </pre>
+            <button onclick="rescan()">rescan playlist</button>
+            <button onclick="swapitems()">swap first two items</button>
+            <button onclick="savequeue()">save queue</button>
+            <button onclick="addvideo()">add video</button>
+            <br><br>
+            <table id="station_queue"></table>
+            <table id="station_queue_noupdate" style="display: none;"></table>
+        </div>
+    </body>
+</html>
