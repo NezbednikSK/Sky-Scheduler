@@ -21,4 +21,4 @@ there's three SSL modes, `false`, `true` and `same-port`\
 The `password_hash` is the SHA256 encoded password.\
 Default hash is for the string `nez`.
 5. Run!
-You can now pass your server address as an argument in [this URL](https://nezbedniksk.github.io/Sky-Oldies/?logo=data%3Aimage%2Fgif%3Bbase64%2CR0lGODlhAQABAIAAAP%2F%2F%2FwAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D&server=http://YOUR.SERVER:PORT/list?station=STATION_NAME).
+You can now pass your server address as an argument in [this URL](https://nezbedniksk.github.io/Sky-Scheduler-Player/?logo=data%3Aimage%2Fgif%3Bbase64%2CR0lGODlhAQABAIAAAP%2F%2F%2FwAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D&server=http://YOUR.SERVER:PORT/list?station=STATION_NAME).
